@@ -1,0 +1,160 @@
+body{
+	font-family: "Raleway", sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+.init{
+	min-height: 120px;
+	width: 100%;
+	background: #717171;
+}
+.menu{
+	padding: 0;
+	margin-top: 10%;
+}
+
+.item{
+	display: inline;
+	margin: 0px 5px;
+}
+
+.item a{
+	color: #2BB673;;
+	text-decoration: none;
+}
+
+.item a:hover{
+	color: #000000;;
+	text-decoration: none;
+	font-size: bold;
+}
+
+
+.content-logo{
+	float: left;
+	width: 60%;
+}
+
+.content-menu{
+	float: right;
+	width: 40%;
+	font-size: 20px;
+}
+
+.bicys{
+	width: 100%;
+	background: red;
+}
+
+.content{
+	width: 100%;
+	background-color: #ececec;
+	padding: 10px 10px;
+	min-height: 500px;
+}
+
+.content > p{
+	margin-left: 35px;
+}
+
+.center{
+	text-align: center;
+}
+
+.slogan{
+	padding-bottom: 100px;
+}
+
+.time{
+	padding-top: 50px;
+}
+
+.button{
+    background: #2BB673;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 20%;
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid #2BB673;
+    color: #ffffff;
+}
+
+.button a{
+	text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.button:hover{
+	background: #1c963c;
+	
+}
+
+.form{
+	padding: 25px;
+	width: 50%;
+}
+
+.field-form{
+	margin: 10px;
+}
+
+.form input{
+	padding: 8px;
+	width: 98%;
+}
+
+.info-personal{
+	width: 55%;
+   /* background: blue;*/
+    float: left;
+}
+
+.info-reserva{
+	float: right;
+    width: 35%;
+    /*background: red;*/
+}
+
+.form button{
+    /* float: right; */
+    border: none;
+    display: block;
+    padding: 15px 35px;
+    vertical-align: middle;
+    text-decoration: none !important;
+    color: #fff;
+    background-color: #000;
+    /* text-align: center; */
+    cursor: pointer;
+    /* margin-top: 40px; */
+    margin: 60px auto;
+    background: #2BB673;
+    font-size: 100%;
+}
+
+.gallery{
+	text-align: center;
+	margin: 5%;
+}
+
+#gimage{
+	width: 500px;
+	height: 350px;
+}
+
+.rules{
+	margin-left: 35px;
+	width: 35%;
+	float: left;
+	margin-top: 14%;
+}
+
+.kit-secure{
+	width: 60%;
+	float: right;
+	margin-top: 8%;
+}

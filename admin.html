@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rent Bike</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="bike.js"></script>
+	</head>
+	<body>
+		<div class="init">
+			<div class="content-logo">
+				<img src="images/logo.png" width="260px">
+			</div>
+			<div class="content-menu">
+				<ul class="menu">
+					<li class="item"><a href="index.html">Inicio</a></li>
+					<li class="item"><a href="rent.html">Reservar</a></li>
+					<li class="item"><a href="gallery.html">Galeria</a></li >
+					<li class="item"><a href="rules.html">Reglas</a></li>
+					<li class="item"><a href="admin.html">Admin</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<button onclick="listUsers()">Listado de bicletas</button>
+			<script type="text/javascript">
+				
+
+
+				function listUsers(){
+					var parameters = {
+	                type: 'GET',          
+	                url : 'http://localhost:8080/rentbike/web/app_dev.php/user/list',
+	                contentType: 'application/json',
+	                dataType: "json",    
+	       //          headers: {
+					   // 'Access-Control-Allow-Origin' : '*',
+					   // },        
+	                success: function(response){    
+	                	
+		    			debugger	
+	                },
+	                error: function (e) {
+						console.log(e)
+						alert('Ha ocurrido un error'); 
+		            }
+	            };
+
+            	$.ajax(parameters); 
+				}
+				
+
+			</script>
+		</div>
+	</body>
+</html>

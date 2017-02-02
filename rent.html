@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rent Bike</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<div class="init">
+			<div class="content-logo">
+				<img src="images/logo.png" width="260px">
+			</div>
+			<div class="content-menu">
+				<ul class="menu">
+					<li class="item"><a href="index.html">Inicio</a></li>
+					<li class="item"><a href="rent.html">Reservar</a></li>
+					<li class="item"><a href="gallery.html">Galeria</a></li >
+					<li class="item"><a href="rules.html">Reglas</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content">
+			<p>Elige el horario de tu bicicleta: </p>
+			<form class="form" name="formrent">
+				<div class="info-personal">
+
+				<div class="field-form">
+					<label>Nombres: </label>
+					<input type="text" id="name" name="nombres" placeholder="Nombre">
+				</div>
+				<div class="field-form">
+					<label>Apellidos:</label>
+					<input type="text" id ="lastname" name="apellidos" placeholder="Apellido">
+				</div>
+				<div class="field-form">
+					<label>DNI:</label>
+					<input type="text" id ="dni" name="dni" >
+				</div>
+				<div class="field-form">
+					<label>Correo:</label>
+					<input type="email" id="email" name="email" placeholder="Correo">
+				</div>
+				<div class="field-form">
+					<label>Celular:</label>
+					<input type="text" id="movil" name="celular" placeholder="Celular">
+				</div>
+				</div>
+				<div class="info-reserva">
+					<div class="field-form">
+						<label>Fecha:</label>
+						<input id="datereserve" type="date" name="fecha" >
+					</div>
+					<div class="field-form">
+						<label>Hora inicio: </label>
+						<select id="start-time">
+							<option value="8">8:00 am</option>
+							<option value="9">9:00 am</option>
+							<option value="10">10:00 am</option>
+							<option value="11">11:00 am</option>
+							<option value="12">12:00 am</option>
+							<option value="13">13:00 pm</option>
+							<option value="14">14:00 pm</option>
+							<option value="15">15:00 pm</option>
+							<option value="16">16:00 pm</option>
+							<option value="17">17:00 pm</option>
+							<option value="18">18:00 pm</option>
+							<option value="19">19:00 pm</option>
+							<option value="20">20:00 pm</option>
+							<option value="21">21:00 pm</option>
+							<option value="22">22:00 pm</option>
+							<option value="23">23:00 pm</option>
+						</select>
+					</div>
+					<div class="field-form">
+						<label>Hora final: </label>
+						<select id="end-time">
+							<option value="8">8:00 am</option>
+							<option value="9">9:00 am</option>
+							<option value="10">10:00 am</option>
+							<option value="11">11:00 am</option>
+							<option value="12">12:00 am</option>
+							<option value="13">13:00 pm</option>
+							<option value="14">14:00 pm</option>
+							<option value="15">15:00 pm</option>
+							<option value="16">16:00 pm</option>
+							<option value="17">17:00 pm</option>
+							<option value="18">18:00 pm</option>
+							<option value="19">19:00 pm</option>
+							<option value="20">20:00 pm</option>
+							<option value="21">21:00 pm</option>
+							<option value="22">22:00 pm</option>
+							<option value="23">23:00 pm</option>
+						</select>
+					</div> 
+					<button type="button" onclick="validar()">Enviar</button>
+				</div>
+
+
+				
+			</form>
+		</div>
+	</body>
+</html>
