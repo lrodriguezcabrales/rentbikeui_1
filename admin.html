@@ -6,7 +6,7 @@
 		<title>Rent Bike</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="bike.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
 		<div class="init">
@@ -34,10 +34,7 @@
 	                type: 'GET',          
 	                url : 'http://localhost:8080/rentbike/web/app_dev.php/user/list',
 	                contentType: 'application/json',
-	                dataType: "json",    
-	       //          headers: {
-					   // 'Access-Control-Allow-Origin' : '*',
-					   // },        
+	                dataType: "json",           
 	                success: function(response){    
 	                	
 		    			debugger	
@@ -53,6 +50,21 @@
 				
 
 			</script>
+			<div class="login">
+				<form>
+					<fieldset>
+						<div class="field-form">
+							<label>Usuario </label>
+							<input type="text" id="email" name="email" placeholder="email">
+						</div>
+						<div class="field-form">
+							<label>Contraseña </label>
+							<input type="text" id="password" name="password" placeholder="contraseña">
+						</div>
+						<button onclick="login()">Ingresar</button>
+					</fieldset>
+				</form>
+			</div>
 		</div>
 	</body>
 </html>
