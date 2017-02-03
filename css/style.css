@@ -158,3 +158,24 @@ body{
 	float: right;
 	margin-top: 8%;
 }
+
+.users{
+	width: 50%;
+    background: red;
+    padding: 100px;
+    text-align: center;
+}
+
+.bikes{
+	width: 50%;
+    background: green;
+    padding: 100px;
+    text-align: center;
+}
+
+.rents{
+	width: 50%;
+    background: blue;
+    padding: 100px;
+    text-align: center;
+}
