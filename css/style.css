@@ -50,7 +50,7 @@ body{
 .content{
 	width: 100%;
 	background-color: #ececec;
-	padding: 10px 10px;
+	padding: 50px 50px;
 	min-height: 500px;
 }
 
@@ -118,9 +118,8 @@ body{
     width: 35%;
     /*background: red;*/
 }
-
+/*
 .form button{
-    /* float: right; */
     border: none;
     display: block;
     padding: 15px 35px;
@@ -128,13 +127,11 @@ body{
     text-decoration: none !important;
     color: #fff;
     background-color: #000;
-    /* text-align: center; */
     cursor: pointer;
-    /* margin-top: 40px; */
     margin: 60px auto;
     background: #2BB673;
     font-size: 100%;
-}
+}*/
 
 .gallery{
 	text-align: center;
@@ -160,22 +157,58 @@ body{
 }
 
 .users{
-	width: 50%;
+	width: 20%;
     background: red;
     padding: 100px;
     text-align: center;
+    float: left;
 }
 
 .bikes{
-	width: 50%;
+	width: 20%;
     background: green;
     padding: 100px;
     text-align: center;
+    float: right;
 }
 
 .rents{
-	width: 50%;
+	width: 20%;
     background: blue;
     padding: 100px;
     text-align: center;
+    float: left;
+}
+
+.login{
+	width: 50%;
+    background: rgba(43, 183, 115, 0.43);
+    /* opacity: 0.3; */
+    text-align: center;
+    margin: 0 auto;
+}
+
+#form-login{
+	margin: 0 auto;
+}
+
+#form-user{
+	width: 100%;
+}
+
+#table-list-users{
+	margin-top: 20px;
+}
+
+.table-bordered{
+	border: 1px solid #000000 !important;
+}
+
+.toolbar form{
+	display: inline-flex;
+	width: 20%;
+}
+
+.toolbar form > form-group{
+	width: 100%;
 }

@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Rent Bike</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/bootstrap.min.css"/>
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
@@ -23,46 +24,27 @@
 				</ul>
 			</div>
 		</div>
-		<div class="content">
-			<button onclick="listUsers()">Listado de bicletas</button>
-			<script type="text/javascript">
-				
-
-
-				function listUsers(){
-					var parameters = {
-	                type: 'GET',          
-	                url : 'http://localhost:8080/rentbike/web/app_dev.php/user/list',
-	                contentType: 'application/json',
-	                dataType: "json",           
-	                success: function(response){    
-	                	
-		    			debugger	
-	                },
-	                error: function (e) {
-						console.log(e)
-						alert('Ha ocurrido un error'); 
-		            }
-	            };
-
-            	$.ajax(parameters); 
-				}
-				
-
-			</script>
+		<div id="content" class="content">
 			<div class="login">
-				<form id="form-login" action="#">
-					<fieldset>
-						<div class="field-form">
+				<form id="form-login" class="form" action="#">
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control" id="email" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label for="password">Contraseña</label>
+						<input type="password" class="form-control" id="password" placeholder="Password">
+					</div>
+
+<!-- 						<div class="field-form">
 							<label>Usuario </label>
 							<input type="text" id="email" name="email" placeholder="email">
 						</div>
 						<div class="field-form">
 							<label>Contraseña </label>
 							<input type="text" id="password" name="password" placeholder="contraseña">
-						</div>
-						<input type="button" onclick="login()" value="Ingresar" />
-					</fieldset>
+						</div> -->
+					<button type="button" class="btn btn-default" onclick="login()">Ingresar</button>
 				</form>
 			</div>
 		</div>
