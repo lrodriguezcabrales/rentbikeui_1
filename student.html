@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="bootstrap-3.3.7/js/bootstrap.js"></script>
 	</head>
-	<body>
+	<body onload="listBikes()">
 		<div class="init">
 			<div class="content-logo">
 				<img src="images/logo.png" width="260px">
@@ -26,19 +26,19 @@
 			</div>
 		</div>
 		<div id="content" class="content">
-			<div class="login">
-				<form id="form-login" class="form" action="#">
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" class="form-control" id="email" placeholder="Email">
-					</div>
-					<div class="form-group">
-						<label for="password">Contraseña</label>
-						<input type="password" class="form-control" id="password" placeholder="Password">
-					</div>
-					<button type="button" class="btn btn-default" onclick="login()">Ingresar</button>
-				</form>
+			
+			<div class="info-student">
+				<p>Hola, mi nombre es Lizeth Rodriguez Cabrales <br/>
+					Pais: Colombia </br>
+					Carrera: Ingeniera de Sistemas <br/><br/>
+					Acerca de la aplicación:<br/><br/>
+					La idea es una aplicación para alquilar bicicletas, parte de la aplicacion es de la materia anterior Computacion en el Cliente, y ahora le agregue formularios para el administrador del negocio, donde se puede crear y buscar usuarios y bicicletas, en el futuro creare las otras secciones como son la renta.
+					<br/></br>
+					El desarrollo es en HTML, JavaScript y PHP con Symfony.
+				</p>
 			</div>
+
 		</div>
 	</body>
+	
 </html>

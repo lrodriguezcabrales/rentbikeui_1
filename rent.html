@@ -5,7 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Rent Bike</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/bootstrap.min.css"/>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="bootstrap-3.3.7/js/bootstrap.js"></script>
 	</head>
 	<body>
 		<div class="init">
@@ -23,38 +26,38 @@
 		</div>
 		<div class="content">
 			<p>Elige el horario de tu bicicleta: </p>
-			<form class="form" name="formrent">
+			<form class="form" name="formrent" onsubmit="reserve(); return false">
 				<div class="info-personal">
 
 				<div class="field-form">
 					<label>Nombres: </label>
-					<input type="text" id="name" name="nombres" placeholder="Nombre">
+					<input type="text" id="name" name="nombres" placeholder="Nombre" required >
 				</div>
 				<div class="field-form">
 					<label>Apellidos:</label>
-					<input type="text" id ="lastname" name="apellidos" placeholder="Apellido">
+					<input type="text" id ="lastname" name="apellidos" placeholder="Apellido" required >
 				</div>
 				<div class="field-form">
 					<label>DNI:</label>
-					<input type="text" id ="dni" name="dni" >
+					<input type="text" id ="dni" name="dni" required >
 				</div>
 				<div class="field-form">
 					<label>Correo:</label>
-					<input type="email" id="email" name="email" placeholder="Correo">
+					<input type="email" id="email" name="email" placeholder="Correo" required >
 				</div>
 				<div class="field-form">
 					<label>Celular:</label>
-					<input type="text" id="movil" name="celular" placeholder="Celular">
+					<input type="text" id="movil" name="celular" placeholder="Celular" required >
 				</div>
 				</div>
 				<div class="info-reserva">
 					<div class="field-form">
 						<label>Fecha:</label>
-						<input id="datereserve" type="date" name="fecha" >
+						<input id="datereserve" type="date" name="fecha" required >
 					</div>
 					<div class="field-form">
 						<label>Hora inicio: </label>
-						<select id="start-time">
+						<select id="start-time" required >
 							<option value="8">8:00 am</option>
 							<option value="9">9:00 am</option>
 							<option value="10">10:00 am</option>
@@ -75,7 +78,7 @@
 					</div>
 					<div class="field-form">
 						<label>Hora final: </label>
-						<select id="end-time">
+						<select id="end-time" required >
 							<option value="8">8:00 am</option>
 							<option value="9">9:00 am</option>
 							<option value="10">10:00 am</option>
@@ -94,7 +97,7 @@
 							<option value="23">23:00 pm</option>
 						</select>
 					</div> 
-					<button type="button" onclick="validar()">Enviar</button>
+					<button type="submit" class="btn btn-success" >Enviar</button>
 				</div>
 
 

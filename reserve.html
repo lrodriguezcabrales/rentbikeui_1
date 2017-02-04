@@ -10,7 +10,7 @@
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="bootstrap-3.3.7/js/bootstrap.js"></script>
 	</head>
-	<body>
+	<body onload="listReserves()">
 		<div class="init">
 			<div class="content-logo">
 				<img src="images/logo.png" width="260px">
@@ -20,25 +20,41 @@
 					<li class="item"><a href="index.html">Inicio</a></li>
 					<li class="item"><a href="user.html">Usuarios</a></li>
 					<li class="item"><a href="bike.html">Bicicletas</a></li>
+					<li class="item"><a href="reserve.html">Reservas</a></li>
 					<li class="item"><a href="rentadmin.html">Rentas</a></li>
 					<li class="item"><a href="student.html">Alumno</a></li>
 				</ul>
 			</div>
 		</div>
 		<div id="content" class="content">
-			<div class="login">
-				<form id="form-login" class="form" action="#">
+			<div class="toolbar">
+				<form class="form-search">
 					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" class="form-control" id="email" placeholder="Email">
+						<input type="text" class="form-control" id="sreserve" placeholder="Busqueda">
 					</div>
-					<div class="form-group">
-						<label for="password">Contraseña</label>
-						<input type="password" class="form-control" id="password" placeholder="Password">
-					</div>
-					<button type="button" class="btn btn-default" onclick="login()">Ingresar</button>
 				</form>
+				<button type="button" class="btn btn-default" onclick="searchReserve()">
+					<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+				</button>
+				<button type="button" class="btn btn-default" onclick="clearReserve()">
+					<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+				</button>
 			</div>
+
+			<table id="table-list-reserves" class="table table-bordered table-hover">
+				<tr id="thead">
+					<th>Id</th>
+					<th>Nombre</th>
+					<th>Apellido</th>
+					<th>Identificación</th>
+					<th>Email</th>
+					<th>Celular</th>
+					<th>Fecha</th>
+					<th>Hora inicio</th>
+					<th>Hora fin</th>
+				</tr>
+			</table>
+
 		</div>
 	</body>
 </html>
