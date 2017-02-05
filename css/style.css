@@ -37,13 +37,13 @@ body{
 
 .content-logo{
 	float: left;
-	width: 60%;
+	width: 40%;
 }
 
 .content-menu{
 	float: right;
-	width: 40%;
-	font-size: 20px;
+    width: 60%;
+    font-size: 20px;
 }
 
 .bicys{
@@ -229,4 +229,8 @@ body{
 
 .page-working{
 	text-align: center;
+}
+
+.img-working{
+	width: 50%;s
 }

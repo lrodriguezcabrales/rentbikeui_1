@@ -6,21 +6,22 @@
 		<title>Rent Bike</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/bootstrap.min.css"/>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="bootstrap-3.3.7/js/bootstrap.js"></script>
 	</head>
 	<body onload="listBikes()">
 		<div class="init">
 			<div class="content-logo">
-				<img src="images/logo.png" width="260px">
+				<a href="index.html"><img src="images/logo.png" width="260px"></a>
 			</div>
 			<div class="content-menu">
 				<ul class="menu">
 					<li class="item"><a href="index.html">Inicio</a></li>
-					<li class="item"><a href="user.html">Usuarios</a></li>
-					<li class="item"><a href="bike.html">Bicicletas</a></li>
-					<li class="item"><a href="rentadmin.html">Rentas</a></li>
+					<li class="item"><a href="views/admin/user.html">Usuarios</a></li>
+					<li class="item"><a href="views/admin/bike.html">Bicicletas</a></li>
+					<li class="item"><a href="views/admin/reserve.html">Reservas</a></li>
+					<li class="item"><a href="views/admin/rentadmin.html">Rentas</a></li>
 					<li class="item"><a href="student.html">Alumno</a></li>
 				</ul>
 			</div>
@@ -31,10 +32,11 @@
 				<p>Hola, mi nombre es Lizeth Rodriguez Cabrales <br/>
 					Pais: Colombia </br>
 					Carrera: Ingeniera de Sistemas <br/><br/>
-					Acerca de la aplicación:<br/><br/>
-					La idea es una aplicación para alquilar bicicletas, parte de la aplicacion es de la materia anterior Computacion en el Cliente, y ahora le agregue formularios para el administrador del negocio, donde se puede crear y buscar usuarios y bicicletas, en el futuro creare las otras secciones como son la renta.
+					<strong>Acerca de la aplicación:</strong><br/><br/>
+					La idea es una aplicación para alquilar bicicletas, parte de la aplicacion es de la materia anterior Computación en el Cliente.
+					Hay un formulario para reservar una bicicleta, y luego hay unas opciones para el administrador que serian crear y listar usuarios, bicicletas y gestionar las reservas.
 					<br/></br>
-					El desarrollo es en HTML, JavaScript y PHP con Symfony.
+					Hasta ahora para el desarrollo he utilizado HTML, JavaScript y PHP con Symfony. 
 				</p>
 			</div>
 
