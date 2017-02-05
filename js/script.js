@@ -234,8 +234,8 @@ function listBikes() {
 
                     tr.append('<td>'+bike.id+'</td>');
                     tr.append('<td>'+bike.code+'</td>');
-                    tr.append('<td>'+bike.state+'</td>');
                     tr.append('<td>'+bike.description+'</td>');
+                    tr.append('<td>'+bike.state+'</td>');
 
                     table.append(tr);
 
@@ -658,3 +658,4 @@ function clearReserve() {
 
     $.ajax(parameters); 
 }
+
